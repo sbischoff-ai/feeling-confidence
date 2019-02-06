@@ -1,0 +1,64 @@
+.Logo-wheel {
+    animation: App-logo-spin infinite 100s linear;
+    height: 65vmin;
+    margin-top: 5vmin;
+}
+
+.App-header {
+    position: relative;
+    background-color: #282c34;
+    background-image: url(../ressources/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navbar {
+    background-color: #282c34;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    min-width: 100%;
+}
+
+.Navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2vmin;
+    text-decoration: none;
+    font-size: calc(10px + 1vmin);
+}
+
+.Navbar a:hover {
+    background-color: slategray;
+    color: aliceblue;
+}
+  
+.Navbar a.active {
+    background-color: darkslategray;
+    color: white;
+}
+
+.Home-content {
+    min-height: calc(100vh - 10px - 5vmin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
